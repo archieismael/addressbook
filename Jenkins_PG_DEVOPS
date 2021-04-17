@@ -3,8 +3,8 @@ pipeline {
             label 'master'
         }
         tools {
-            maven 'mymaven'
-            jdk 'myjava'
+            maven 'maven_home'
+            jdk 'java_home'
         }
     stages {     
         stage ('Checkout the code') {
