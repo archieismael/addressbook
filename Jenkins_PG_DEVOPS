@@ -9,7 +9,7 @@ pipeline {
     stages {     
         stage ('Checkout the code') {
             steps{
-                git branch: 'master', url: 'https://github.com/devopstrainers1/addressbook.git'
+                git branch: 'master', url: 'https://github.com/archieismael/addressbook.git'
             }
         }
 
