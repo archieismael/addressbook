@@ -1,4 +1,4 @@
-package com.vaadin.tutorial.addressbook;;
+package com.vaadin.tutorial.addressbook;
 
 import javax.servlet.annotation.WebServlet;
 
@@ -27,7 +27,7 @@ import com.vaadin.v7.ui.TextField;
 @Title("Addressbook")
 @Theme("valo")
 @Widgetset("com.vaadin.v7.Vaadin7WidgetSet")
-public class AddressbookUI extends UI {
+public class AddressbookUI extends UI { hkjjhkjhkj
 
     /*
      * Hundreds of widgets. Vaadin's user interface components are just Java
