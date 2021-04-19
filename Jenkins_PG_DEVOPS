@@ -10,8 +10,18 @@ pipeline {
 
         stage ('Code Compile') {
             steps{
+                catchError (buildResult: 'SUCCESS', stageResult: 'Failure') {
                 sh """
                 mvn compile
+                """
+                }
+            }
+        }
+        
+        stage ('Test CatchError') {
+            steps {
+                sh """
+                echo "Demo"
                 """
             }
         }
