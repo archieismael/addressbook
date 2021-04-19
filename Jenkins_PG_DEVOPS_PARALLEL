@@ -28,8 +28,8 @@ pipeline {
         }
 
         stage ('JUnit Test') {
+            when { expression { return env.Test.contains('YES') }}
             steps {
-                //when { expression { return env.Test.contains('YES') }}
                 sh """
                 mvn test
                 """
