@@ -7,11 +7,6 @@ pipeline {
             jdk 'java_home'
         }
     stages {     
-        stage ('Checkout the code') {
-            steps{
-                git branch: 'master', url: 'https://github.com/archieismael/addressbook.git'
-            }
-        }
 
         stage ('Code Compile') {
             steps{
